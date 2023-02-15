@@ -10,69 +10,70 @@
 <body>
     <div id="principal">
         <header class="main_header">
-            <img src="../Proj_068/imagens/logo.jpg" alt="" height="150px" width="150px" class="left">
-            <!-- <div class="banner"></div> -->
+            <img src="../Proj_068/imagens/logo.jpg" alt="" height="100px" width="100px">
             <nav>
-                <ul class="right">
+                <ul>
                     <li class="menu"><a href="#">home</a></li>
                     <li class="menu"><a href="#">Parte A</a></li>
                     <li class="menu"><a href="#">Parte B</a></li>
                 </ul>
             </nav>
         </header>
+        <div class="clear"></div>
         <main>
-            <form action="">
-                <fieldset>
-                    <div>
-                        <div class="campo">
-                            <label for="data"><strong>Data de nascimento</strong></label>
-                            <input type="date" name="data" id="data">
-                        </div>
-                        <div class="campo">
-                            <label for="sexo"><strong>Sexo</strong></label>
-                            <select id="estado-civil">
-                                <option selected disabled value="">Selecione</option>
-                                <option value="">Masculino</option>
-                                <option value="">Feminino</option>
-                            </select>
-                        </div>
+            <div class="formulario">
+                <form action="">
+                    <fieldset>
                         <div>
-                            <label for="peso"><strong>Peso</strong></label>
-                            <input type="number" name="peso" id="peso">
+                            <div class="campo">
+                                <label for="data"><strong>Data de nascimento</strong></label>
+                                <input type="date" name="data" id="data">
+                            </div>
+                            <div class="campo">
+                                <label for="sexo"><strong>Sexo</strong></label>
+                                <select id="estado-civil">
+                                    <option selected disabled value="">Selecione</option>
+                                    <option value="">Masculino</option>
+                                    <option value="">Feminino</option>
+                                </select>
+                            </div>
+                            <div class="campo">
+                                <label for="peso"><strong>Peso</strong></label>
+                                <input type="number" name="peso" id="peso">
+                            </div>
+                            <div class="campo">
+                                <label for="altura"><strong>Altura</strong></label>
+                                <input type="number" name="altura" id="altura">
+                            </div>
+                            <div class="campo">
+                                <label for="fumante"><strong>Fumou nos ultimos 24 meses?</strong></label>
+                                <select id="fumante">
+                                    <option selected disabled value="">Selecione</option>
+                                    <option value="">Sim</option>
+                                    <option value="">Não</option>
+                                </select>
+                            </div>
+                            <div class="campo">
+                                <label for="profissao"><strong>Qual sua última profissão?</strong></label>
+                                <input type="text" name="profissao" id="profissao">
+                            </div>
+                            <div class="campo">
+                                <label for="faixaRenda"><strong>Qual sua faixa de renda?</strong></label>
+                                <select name="faixa" id="faixaRenda">
+                                    <option selected disabled value=""> Selecione sua Faixa de Renda </option>
+                                    <option value="1">R$ 1.500,00</option>
+                                    <option value="2">R$ 2.500,00</option>
+                                    <option value="3">R$ 3.500,00</option>
+                                    <option value="4">R$ 4.500,00</option>
+                                    <option value="5">R$ 5.500,00</option>
+                                    <option value="6">R$ 6.500,00</option>
+                                </select>
+                            </div>
+                            <div><button class="botao" type="submit">Enviar</button></div>
                         </div>
-                        <div>
-                            <label for="altura"><strong>Altura</strong></label>
-                            <input type="number" name="altura" id="altura">
-
-                        </div>
-                        <div class="campo">
-                            <label for="fumante"><strong>Fumou nos ultimos 24 meses?</strong></label>
-                            <select id="fumante">
-                                <option selected disabled value="">Selecione</option>
-                                <option value="">Sim</option>
-                                <option value="">Não</option>
-                            </select>
-                        </div>
-                        <div>
-                            <label for="profissao"><strong>Qual sua última profissão?</strong></label>
-                            <input type="text" name="profissao" id="profissao">
-                        </div>
-                        <div>
-                            <label for="faixaRenda"><strong>Qual sua faixa de renda?</strong></label>
-                            <select name="faixa" id="faixaRenda">
-                                <option selected disabled value=""> Selecione sua Faixa de Renda </option>
-                                <option value="1">R$ 1.500,00</option>
-                                <option value="2">R$ 2.500,00</option>
-                                <option value="3">R$ 3.500,00</option>
-                                <option value="4">R$ 4.500,00</option>
-                                <option value="5">R$ 5.500,00</option>
-                                <option value="6">R$ 6.500,00</option>
-                            </select>
-                        </div>
-                        <div><button class="botao" type="submit">Enviar</button></div>
-                    </div>
-                </fieldset>
-            </form>
+                    </fieldset>
+                </form>
+            </div>
         </main>
 
     </div>
