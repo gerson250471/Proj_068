@@ -1,0 +1,36 @@
+*{
+    margin:0;
+    padding: 0;
+}
+#principal{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.main_header{
+    background-color: #231F14;
+}
+.main_header nav ul{
+    text-align: right;
+}
+.left{
+    float: left;
+    
+}
+.right{
+    float: right;
+    
+}
+.menu{
+    padding: 10px;
+    border: 1px solid white;
+    display: inline-block;
+}
+body{
+    background-color: #736D61;
+    clear: both;
+}
+main{
+    clear: both;
+    width: 80%;
+    margin: auto;
+    background-color: #918A6E    ;
+}
