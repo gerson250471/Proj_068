@@ -6,7 +6,8 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 .main_header{
-    background-color: #2A1C02;
+    padding: 15px;
+    background-color: #1D1D1D;
     overflow: auto;
 }
 .main_header img{
@@ -27,7 +28,7 @@
     display: block;
     padding: 10px;
     text-decoration: none;
-    color: white;
+    color: black;
     border-radius: 15px;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -39,14 +40,16 @@
     clear: both;
 }
 body{
-    background-color: #918A6E;
+    background-color: #CAC0A4;
     clear: both;
 }
 main{
     clear: both;
-    width: 80%;
+    width: 40%;
     margin: auto;
-    background-color: #918A6E    ;
+    background-color: #f7efdb;
+    border-radius: 15px;
+    padding-left: 15px;
 }
 .formulario{
     margin-top: 15px;
@@ -78,4 +81,59 @@ input, select, textarea, button{
 }
 .botao:hover{
     background: #070605;
+}
+
+/* Animações */
+main{
+    animation: fade 500ms;
+}
+form{
+    overflow: hidden;
+}
+form .campo:nth-child(1){
+    animation: move 500ms;
+    animation-fill-mode: backwards;
+}
+form .campo:nth-child(2){
+    animation: move 500ms ;
+    animation-delay: 50ms;
+    animation-fill-mode: backwards;
+}
+form .campo:nth-child(3){
+    animation: move 500ms ;
+    animation-delay: 100ms;
+    animation-fill-mode: backwards;
+}
+form .campo:nth-child(4){
+    animation: move 500ms ;
+    animation-delay: 150ms;
+    animation-fill-mode: backwards;
+}
+form .campo:nth-child(5){
+    animation: move 500ms ;
+    animation-delay: 200ms;
+    animation-fill-mode: backwards;
+}
+
+@keyframes move{
+
+    from{
+        opacity: 0;
+        transform:translateX(-35%);
+    }to{
+        opacity: 1;
+        transform: translateX(0);
+    }   
+
+}
+@keyframes fade{
+
+    from{
+        opacity: 0;
+        transform: scale(0.9);
+    }to{
+        opacity: 1;
+        transform: scale(1);
+    }
+
 }

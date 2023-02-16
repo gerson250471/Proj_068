@@ -10,14 +10,7 @@
 <body>
     <div id="principal">
         <header class="main_header">
-            <img src="../Proj_068/imagens/logo.jpg" alt="" height="100px" width="100px">
-            <nav>
-                <ul>
-                    <li class="menu"><a href="#">home</a></li>
-                    <li class="menu"><a href="#">Parte A</a></li>
-                    <li class="menu"><a href="#">Parte B</a></li>
-                </ul>
-            </nav>
+            <img src="https://static.wixstatic.com/media/390e98_0dcb11eec1ea4783b11485cf1b8051cd~mv2.png/v1/fill/w_239,h_50,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/LOGO%20BORDUCHI.png" alt="Logo">
         </header>
         <div class="clear"></div>
         <main>
@@ -26,50 +19,26 @@
                     <fieldset>
                         <div>
                             <div class="campo">
+                                <label for="nome"><strong>Nome</strong></label>
+                                <input type="text" name="nome" id="nome">
+                            </div>
+                            <div class="campo">
                                 <label for="data"><strong>Data de nascimento</strong></label>
                                 <input type="date" name="data" id="data">
                             </div>
                             <div class="campo">
-                                <label for="sexo"><strong>Sexo</strong></label>
-                                <select id="estado-civil">
+                                <label for="sexo"><strong>Qual sexo consta no seu registro de nascimento?</strong></label>
+                                <select id="sexo">
                                     <option selected disabled value="">Selecione</option>
                                     <option value="">Masculino</option>
                                     <option value="">Feminino</option>
                                 </select>
                             </div>
                             <div class="campo">
-                                <label for="peso"><strong>Peso</strong></label>
-                                <input type="number" name="peso" id="peso">
-                            </div>
-                            <div class="campo">
-                                <label for="altura"><strong>Altura</strong></label>
-                                <input type="number" name="altura" id="altura">
-                            </div>
-                            <div class="campo">
-                                <label for="fumante"><strong>Fumou nos ultimos 24 meses?</strong></label>
-                                <select id="fumante">
-                                    <option selected disabled value="">Selecione</option>
-                                    <option value="">Sim</option>
-                                    <option value="">Não</option>
-                                </select>
-                            </div>
-                            <div class="campo">
                                 <label for="profissao"><strong>Qual sua última profissão?</strong></label>
                                 <input type="text" name="profissao" id="profissao">
                             </div>
-                            <div class="campo">
-                                <label for="faixaRenda"><strong>Qual sua faixa de renda?</strong></label>
-                                <select name="faixa" id="faixaRenda">
-                                    <option selected disabled value=""> Selecione sua Faixa de Renda </option>
-                                    <option value="1">R$ 1.500,00</option>
-                                    <option value="2">R$ 2.500,00</option>
-                                    <option value="3">R$ 3.500,00</option>
-                                    <option value="4">R$ 4.500,00</option>
-                                    <option value="5">R$ 5.500,00</option>
-                                    <option value="6">R$ 6.500,00</option>
-                                </select>
-                            </div>
-                            <div><button class="botao" type="submit">Enviar</button></div>
+                            <div class="campo"><button class="botao" type="submit">Enviar</button></div>
                         </div>
                     </fieldset>
                 </form>
